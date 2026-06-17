@@ -1,0 +1,4 @@
+name: ConwaysGameOfLife
+version: '1.0'
+main: de.leo.conwaysGameOfLife.ConwaysGameOfLife
+api-version: '1.21'

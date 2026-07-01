@@ -111,3 +111,6 @@ buildNumber.properties
 
 # Common working directory
 run/
+
+### Other ###
+/src/main/java/de/leo/conwaysGameOfLife/reload.java

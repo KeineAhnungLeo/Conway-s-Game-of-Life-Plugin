@@ -2,3 +2,15 @@ name: ConwaysGameOfLife
 version: '1.0'
 main: de.leo.conwaysGameOfLife.ConwaysGameOfLife
 api-version: '1.21'
+commands:
+  canvas:
+    aliases: [c]
+    description: Configure the Canvas of the Game
+  simulation:
+    aliases: [sim]
+    description: Change the behaviour of the Simulation
+  reset:
+    description: Resets specific settings
+    aliases: [r]
+  version:
+    description: Shows you the current Version of the Plugin

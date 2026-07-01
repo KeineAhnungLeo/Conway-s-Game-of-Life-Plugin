@@ -1,4 +1,4 @@
-<img src="assets/images/title.png" width="600">
+<img src="assets/images/Title.png" width="600">
 
 # Conway´s Game of Life - Minecraft Plugin
 

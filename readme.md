@@ -53,6 +53,12 @@ To toggle this, use `/simulation ruletype copyworld`; to revert, simply use `/si
 - As soon as the server is shut down normally, all settings that have been configured are saved. This means that after restarting, the game can continue as usual without any problems.
 - The saved data is stored in a .yml file located in a folder named after the plugin, within the plugins folder.
 
+### Installation 📲
+* Download the plugin `ConwaysGameOfLifePlugin-1.0.jar` in `Release-1.0` or at [CurseForge]()
+* Place it in your server's plugins folder
+* Restart the server
+* The plugin will automatically load
+
 ## Note ✍️
 - This plugin was created by KeineAhnungLeo and is open source.
 - The plugin will may continue to receive some updates und bugfixes in the future.

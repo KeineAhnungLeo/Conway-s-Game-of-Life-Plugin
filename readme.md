@@ -54,7 +54,7 @@ To toggle this, use `/simulation ruletype copyworld`; to revert, simply use `/si
 - The saved data is stored in a .yml file located in a folder named after the plugin, within the plugins folder.
 
 ### Installation 📲
-* Download the plugin `ConwaysGameOfLifePlugin-1.0.jar` in `Release-1.0` or at [CurseForge]()
+* Download the plugin `ConwaysGameOfLifePlugin-1.0.jar` in `Release-1.0` or at [CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/conway-s-game-of-life)
 * Place it in your server's plugins folder
 * Restart the server
 * The plugin will automatically load

@@ -1,4 +1,4 @@
-<img src="assets/images/Title.png" width="600">
+<img src="assets/images/Title.png" width="1140" alt="Logo">
 
 # Conway´s Game of Life - Minecraft Plugin
 
@@ -14,30 +14,30 @@ The Game of Life is played on an infinite square grid, with each cell being in o
 
 ### What rules determine how the game is played? 📋
 
-|  Rule  |Description|                     Example                     |
-|:------:|:----:|:-----------------------------------------------:|
-| **#1** | A living cell survives into the next generation if it has either two or three living neighbors. | <img src="assets/images/Rule1.png" width="100"> |
+|  Rule  |                                           Description                                            |                     Example                     |
+|:------:|:------------------------------------------------------------------------------------------------:|:-----------------------------------------------:|
+| **#1** | A living cell survives into the next generation if it has either two or three living neighbors.  | <img src="assets/images/Rule1.png" width="100"> |
 | **#2** | A dead cell “is born” (lives into the next generation) if it has exactly three living neighbors. | <img src="assets/images/Rule2.png" width="100"> |
 
 ## How does it work in Minecraft? ⛏️
 
 The plugin implements the logic, user input, and user controls in Minecraft. The user uses two commands to do this.
 
-| Command | Description |                           Example                           |
-|:----:|:----:|:-----------------------------------------------------------:|
-| **`/canvas`** | You can use this command to create a canvas. You can set the center, the material of the cells and the canvas, and the size. You can also place it, delete it, or clear it afterward. When placing it, a gold block is placed in the center to help with orientation. |   <img src="assets/images/CanvasExample.png" width="800">   |
-| **`/simulation`** | You can use this command to simulate the game. After placing a canvas, you can now build a starter figure on the 2D grid using the predefined material (default: minecraft:black_concrete). Just replace the canvas blocks—don’t worry, this won’t break anything. To view the generations one by one, you can do this manually, step by step. However, a built-in scheduler is also available to simulate the process for you. You can start or stop it, or adjust its speed. If you want more detailed information about the simulation, you can view debug information—either in the action bar or in more detail in the chat. | <img src="assets/images/SimulationExample.png" width="800"> 
-| **`/reset`** | Simply put, you can use this command to reset either the canvas, the simulation, or everything. | |
+|      Command      |                                                                                                                                                                                                                                                                                                            Description                                                                                                                                                                                                                                                                                                             |                           Example                           |
+|:-----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------:|
+|   **`/canvas`**   |                                                                                                                                                                               You can use this command to create a canvas. You can set the center, the material of the cells and the canvas, and the size. You can also place it, delete it, or clear it afterward. When placing it, a gold block is placed in the center to help with orientation.                                                                                                                                                                                |   <img src="assets/images/CanvasExample.png" width="800">   |
+| **`/simulation`** | You can use this command to simulate the game. After placing a canvas, you can now build a starter figure on the 2D grid using the predefined material (default: minecraft:black_concrete). Just replace the canvas blocks, don’t worry, this won’t break anything. To view the generations one by one, you can do this manually, step by step. However, a built-in scheduler is also available to simulate the process for you. You can start or stop it, or adjust its speed. If you want more detailed information about the simulation, you can view debug information either in the action bar or in more detail in the chat. | <img src="assets/images/SimulationExample.png" width="800"> |
+|   **`/reset`**    |                                                                                                                                                                                                                                                                  Simply put, you can use this command to reset either the canvas, the simulation, or everything.                                                                                                                                                                                                                                                                   |                                                             |
 
 If you enter the command without any additional parameters, the syntax for using it in chat will be displayed.
 
-### Ruletypes
-The standard game is played according to the two rules listed above. However, I discovered that there are two other sets of rules that can be used to simulate the game. This is known as “Copyworld,” in which the following rules apply.
+### Rule types
+The standard game is played according to the two rules listed above. However, I discovered that there are two other sets of rules that can be used to simulate the game. This is known as "Copyworld", in which the following rules apply.
 
-|      Rule      |Description|
-|:--------------:|:----:|
+|      Rule      |                                 Description                                  |
+|:--------------:|:----------------------------------------------------------------------------:|
 | **Death Rule** | A cell with exactly 0, 2, 4, 6, or 8 living neighbors dies (or remains dead) |
-| **Born Rule**  | 1, 3, 5, or 7 live neighbors create (or maintain) a live cell |
+| **Born Rule**  |        1, 3, 5, or 7 live neighbors create (or maintain) a live cell         |
 
 With these two settings, a built shape will repeat itself indefinitely as it expands.
 
@@ -45,7 +45,7 @@ To toggle this, use `/simulation ruletype copyworld`; to revert, simply use `/si
 
 ### Important Notes ❗
 
-- It is not recommended to generate a canvas that is too large—for example, more than 300 blocks—as this places an exponential load on server performance.
+- It is not recommended to generate a canvas that is too large. For example, more than 300 blocks, as this places an exponential load on server performance.
 - When cell generation extends beyond the edge, the opposite side of the canvas is used for further simulation. Simply put, when a pattern moves off the canvas, it reappears on the other side. This makes it appear infinite.
 
 ## Saved Data 📃
@@ -54,11 +54,11 @@ To toggle this, use `/simulation ruletype copyworld`; to revert, simply use `/si
 - The saved data is stored in a .yml file located in a folder named after the plugin, within the plugins folder.
 
 ### Installation 📲
-* Download the plugin `ConwaysGameOfLifePlugin-1.0.jar` in `Release-1.0` or at [CurseForge]()
+* Download the plugin `ConwaysGameOfLifePlugin-1.0.jar` in `Release-1.0` or at [CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/conway-s-game-of-life)
 * Place it in your server's plugins folder
 * Restart the server
 * The plugin will automatically load
 
 ## Note ✍️
 - This plugin was created by KeineAhnungLeo and is open source.
-- The plugin will may continue to receive some updates und bugfixes in the future.
+- The plugin will may continue to receive some updates and bugfixes in the future.

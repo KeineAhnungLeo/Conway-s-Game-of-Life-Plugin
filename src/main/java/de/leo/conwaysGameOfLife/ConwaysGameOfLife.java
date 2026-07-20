@@ -29,8 +29,6 @@ public final class ConwaysGameOfLife extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        //Events
-        Bukkit.getPluginManager().registerEvents(new reload(), this);
         //Commands
         Objects.requireNonNull(getCommand("canvas")).setExecutor(new Canvas());
         Objects.requireNonNull(getCommand("simulation")).setExecutor(new Simulation());
